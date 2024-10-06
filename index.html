@@ -34,7 +34,7 @@
         <a href="#" id="search-button">
           <i data-feather="search"></i>
         </a>
-        <a href="#" id="shopping-cart">
+        <a href="#" id="shopping-cart-button">
           <i data-feather="shopping-cart"></i>
         </a>
         <a href="#" id="hamburger-menu">
@@ -207,7 +207,9 @@
         <div class="product-card">
           <div class="product-icon">
             <a href=""><i data-feather="shopping-cart"></i></a>
-            <a href=""><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
           </div>
           <div class="product-image">
             <img
@@ -232,7 +234,9 @@
         <div class="product-card">
           <div class="product-icon">
             <a href=""><i data-feather="shopping-cart"></i></a>
-            <a href=""><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
           </div>
           <div class="product-image">
             <img
@@ -257,7 +261,9 @@
         <div class="product-card">
           <div class="product-icon">
             <a href=""><i data-feather="shopping-cart"></i></a>
-            <a href=""><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
           </div>
           <div class="product-image">
             <img
@@ -342,6 +348,37 @@
       </div>
     </footer>
     <!-- Footer end -->
+
+    <!-- Modal box item detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x-circle"></i></a>
+        <div class="modal-content">
+          <img src="./img/products/coffe-bean.jpg" alt="Produk 1" />
+          <div class="product-content">
+            <h3>Product 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              quam, distinctio aliquid veniam sapiente aperiam minus quaerat
+              aspernatur? Itaque distinctio, blanditiis asperiores adipisci
+              optio consectetur.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>Add to cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal box item detail end -->
 
     <!-- Feather Icons -->
     <script>
