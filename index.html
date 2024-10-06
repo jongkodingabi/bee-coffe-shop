@@ -275,11 +275,7 @@
             </div>
 
             <div class="product-image">
-              <img
-                :src="`./img/products/${item.img}`"
-                style="width: 400px; height: 400px"
-                :alt="item.name"
-              />
+              <img :src="`./img/products/${item.img}`" :alt="item.name" />
             </div>
             <div class="product-conten">
               <h3 x-text="item.name"></h3>
@@ -412,11 +408,11 @@
     <!-- Footer end -->
 
     <!-- Modal box item detail start -->
-    <div class="modal" id="item-detail-modal">
+    <div class="modal" id="item-detail-modal" x-show="item-detail-modal">
       <div class="modal-container">
         <a href="#" class="close-icon"><i data-feather="x-circle"></i></a>
         <div class="modal-content">
-          <img src="./img/products/coffe-bean.jpg" alt="Produk 1" />
+          <img src="`./img/products/${item.img}`" alt="Produk 1" />
           <div class="product-content">
             <h3>Product 1</h3>
             <p>

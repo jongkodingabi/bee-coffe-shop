@@ -443,7 +443,7 @@ body {
   padding: 1rem 0;
 }
 
-.products.product-image img {
+.products .product-image img {
   height: 25rem;
 }
 
